@@ -1,0 +1,65 @@
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: oklch(0.15 0.05 250);
+    color: oklch(0.95 0.01 250);
+    perspective: 1000px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gradient-card {
+    background: rgba(20, 20, 35, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1.5px solid rgba(212, 175, 55, 0.6);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, oklch(0.72 0.15 70) 0%, oklch(0.95 0.01 250) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.4);
+    border-color: rgba(212, 175, 55, 0.8);
+}
+
+.section-3d {
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    transform-style: preserve-3d;
+    will-change: transform, opacity;
+}
+
+#animatedCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.6;
+}

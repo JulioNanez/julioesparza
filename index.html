@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julio Esparza - Digital Strategy & Insight Leader</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen relative">
+    <!-- Animated Background Canvas -->
+    <canvas id="animatedCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 backdrop-blur-sm border-b border-[rgba(212,175,55,0.5)]"
+        style="background: rgba(26, 28, 44, 0.98);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-xl sm:text-2xl font-bold gradient-text">Marketing Digital</div>
+
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio"
+                        class="nav-link capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors">inicio</a>
+                    <a href="#experiencia"
+                        class="nav-link capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors">experiencia</a>
+                    <a href="#proyectos"
+                        class="nav-link capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors">proyectos</a>
+                    <a href="#habilidades"
+                        class="nav-link capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors">habilidades</a>
+                    <a href="#contacto"
+                        class="nav-link capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors">contacto</a>
+                </div>
+
+                <button id="menuBtn" class="md:hidden text-[oklch(0.72_0.15_70)]">
+                    <svg id="menuIcon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden border-t border-[rgba(212,175,55,0.5)]"
+            style="background: rgba(26, 28, 44, 0.98);">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#inicio"
+                    class="mobile-nav-link block w-full text-left capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors py-2">inicio</a>
+                <a href="#experiencia"
+                    class="mobile-nav-link block w-full text-left capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors py-2">experiencia</a>
+                <a href="#proyectos"
+                    class="mobile-nav-link block w-full text-left capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors py-2">proyectos</a>
+                <a href="#habilidades"
+                    class="mobile-nav-link block w-full text-left capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors py-2">habilidades</a>
+                <a href="#contacto"
+                    class="mobile-nav-link block w-full text-left capitalize hover:text-[oklch(0.72_0.15_70)] transition-colors py-2">contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="min-h-screen flex items-center justify-center px-4 pt-16 section-3d relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="fade-in visible">
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 gradient-text mx-2"
+                    style="line-height: 2 !important;">Julio
+                    Esparza
+                </h1>
+                <h2 class="text-2xl sm:text-3xl lg:text-4xl mb-6 leading-[2]" style="color: oklch(0.85 0.05 250);">
+                    Digital Strategy & Insight Leader
+                </h2>
+                <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto leading-relaxed"
+                    style="color: oklch(0.75 0.05 250);">
+                    Especialista en datos y redes sociales con <span class="font-semibold"
+                        style="color: oklch(0.72 0.15 70);">9+ años de experiencia</span> en análisis de métricas
+                    digitales, social listening y estrategia. Actualmente enfocado en data, reportes, estrategia e
+                    inteligencia artificial.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <a href="https://www.linkedin.com/in/julio-esparza-glz/" target="_blank"
+                        class="gradient-card px-6 py-3 rounded-lg hover-scale flex items-center gap-2">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                    <a href="https://www.behance.net/julioesparzaglz" target="_blank"
+                        class="gradient-card px-6 py-3 rounded-lg hover-scale flex items-center gap-2">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.61.165-1.252.25-1.91.25H0V4.51h6.938v-.007zM16.94 16.665c.44.428 1.073.643 1.894.643.59 0 1.1-.148 1.53-.447.424-.29.68-.61.78-.94h2.588c-.403 1.28-1.048 2.2-1.9 2.75-.85.56-1.884.83-3.08.83-.837 0-1.584-.13-2.24-.4-.65-.27-1.2-.65-1.64-1.12-.44-.47-.78-1.05-1.02-1.72-.24-.67-.36-1.39-.36-2.16 0-.75.125-1.45.38-2.12.25-.67.61-1.25 1.07-1.73.46-.48 1.01-.86 1.65-1.14.64-.28 1.35-.42 2.13-.42.87 0 1.63.18 2.29.53.66.35 1.2.83 1.62 1.44.42.61.73 1.3.93 2.07.2.77.28 1.57.24 2.4h-7.69c0 .84.28 1.49.71 1.93l.01.02zm-5.694-7.45h3.49V7.56h-3.49v1.65z" />
+                        </svg>
+                        Behance
+                    </a>
+                    <a href="#contacto" class="px-6 py-3 rounded-lg hover-scale flex items-center gap-2 font-semibold"
+                        style="background: oklch(0.72 0.15 70); color: oklch(0.15 0.05 250);">
+                        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                            viewBox="0 0 24 24">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contacto
+                    </a>
+                </div>
+                <a href="#experiencia" class="inline-block animate-bounce" style="color: oklch(0.72 0.15 70);">
+                    <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experiencia" class="py-20 px-4 fade-in section-3d relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center gradient-text">Experiencia Profesional</h2>
+            <div class="space-y-8">
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <div class="flex items-start gap-4">
+                        <div style="color: oklch(0.72 0.15 70);" class="mt-1">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                <path d="M2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Digital Strategy & Insight Leader</h3>
+                            <div class="flex flex-wrap items-center gap-3 mb-4" style="color: oklch(0.75 0.05 250);">
+                                <span class="font-semibold" style="color: oklch(0.72 0.15 70);">Grupo W</span>
+                                <span>•</span>
+                                <span>Dic 2024 - Actualidad</span>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Auditoría de redes sociales</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Análisis de competencia</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Insights estratégicos</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Implementación de IA</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <div class="flex items-start gap-4">
+                        <div style="color: oklch(0.72 0.15 70);" class="mt-1">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Data Specialist</h3>
+                            <div class="flex flex-wrap items-center gap-3 mb-4" style="color: oklch(0.75 0.05 250);">
+                                <span class="font-semibold" style="color: oklch(0.72 0.15 70);">Grupo W</span>
+                                <span>•</span>
+                                <span>Ene 2023 - Nov 2024</span>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Análisis de datos</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Elaboración de reportes</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Estrategia digital</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <div class="flex items-start gap-4">
+                        <div style="color: oklch(0.72 0.15 70);" class="mt-1">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Producer / Community Manager</h3>
+                            <div class="flex flex-wrap items-center gap-3 mb-4" style="color: oklch(0.75 0.05 250);">
+                                <span class="font-semibold" style="color: oklch(0.72 0.15 70);">Grupo W / MTNT</span>
+                                <span>•</span>
+                                <span>Mar 2022 - Dic 2022</span>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Estrategia de community management</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Desarrollo de contenido multiplataforma</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Gestión de comunidad</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Creación de campañas</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <div class="flex items-start gap-4">
+                        <div style="color: oklch(0.72 0.15 70);" class="mt-1">
+                            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Community Manager</h3>
+                            <div class="flex flex-wrap items-center gap-3 mb-4" style="color: oklch(0.75 0.05 250);">
+                                <span class="font-semibold" style="color: oklch(0.72 0.15 70);">Grupo W</span>
+                                <span>•</span>
+                                <span>2016 - 2022</span>
+                            </div>
+                            <ul class="space-y-2">
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Gestión de comunidades</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Creación de contenido</span></li>
+                                <li class="flex items-start gap-2"><span style="color: oklch(0.72 0.15 70);"
+                                        class="mt-1">▹</span><span>Atención a usuarios</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="proyectos" class="py-20 px-4 fade-in section-3d relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center gradient-text">Proyectos Destacados</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/1tLvF7K3/Captura-de-pantalla-2025-12-19-a-la-s-11-35-14-a-m.png"
+                            alt="Shark Tank México"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">Shark Tank México</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">Sony Shows</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Data
+                                Analysis</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Social
+                                Listening</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Strategy</span>
+                        </div>
+                        <a href="https://www.instagram.com/sharktankmex/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/mVKvy1BZ/Captura-de-pantalla-2025-12-19-a-la-s-11-39-43-a-m.png"
+                            alt="Casados con Hijos México"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">Casados con Hijos México</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">Sony Shows</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Content
+                                Strategy</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Engagement</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Analytics</span>
+                        </div>
+                        <a href="https://www.instagram.com/casadosconhijosmx/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/d4fbmrTw/492894624-1308117447637397-3408047066866719538-n.jpg"
+                            alt="MTNT Gym"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">MTNT Gym</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">Grupo W</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Strategy</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">AI</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Communication</span>
+                        </div>
+                        <a href="https://www.instagram.com/mtnt.mx/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/bMwJ2zKH/Captura-de-pantalla-2025-12-19-a-la-s-11-45-26-a-m.png"
+                            alt="Quesabirrias los González"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">Quesabirrias los González</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">Freelance</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Production</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Content</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Design</span>
+                        </div>
+                        <a href="https://www.instagram.com/quesabirriaslosgonzalez/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/gZSgjYxW/Captura-de-pantalla-2025-12-19-a-la-s-11-47-32-a-m.png"
+                            alt="Día Internacional de la Mujer"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">Día Internacional de la Mujer</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">MTNT</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Campaign</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Social
+                                Media</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Design</span>
+                        </div>
+                        <a href="https://www.instagram.com/p/Cpgd83zJTfB/" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg overflow-hidden hover-scale group">
+                    <div class="relative h-48 overflow-hidden" style="background: oklch(0.2 0.05 250);">
+                        <img src="https://i.ibb.co/jZrdTgg6/Captura-de-pantalla-2025-12-19-a-la-s-12-29-54-p-m.png"
+                            alt="Summer Body Challenge"
+                            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 opacity-70"
+                            style="background: linear-gradient(to top, oklch(0.15 0.05 250), transparent);"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-2">Summer Body Challenge</h3>
+                                <p class="text-sm font-semibold" style="color: oklch(0.72 0.15 70);">MTNT</p>
+                            </div>
+                            <svg width="20" height="20" fill="none" stroke="oklch(0.72 0.15 70)" stroke-width="2"
+                                viewBox="0 0 24 24" class="flex-shrink-0 ml-2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Community</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Engagement</span>
+                            <span class="text-xs px-3 py-1 rounded-full font-medium"
+                                style="background: rgba(212, 175, 55, 0.3); color: oklch(0.95 0.01 250); border: 1px solid rgba(212, 175, 55, 0.5);">Fitness</span>
+                        </div>
+                        <a href="https://www.instagram.com/p/CtSPT9cpP2g/?img_index=3" target="_blank"
+                            class="inline-flex items-center gap-2 text-sm font-semibold transition-colors"
+                            style="color: oklch(0.72 0.15 70);">
+                            Ver proyecto
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"
+                                viewBox="0 0 24 24">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="py-20 px-4 fade-in section-3d relative z-10">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-12 text-center gradient-text">Habilidades & Herramientas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4" style="color: oklch(0.72 0.15 70);">Data & Analytics</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Google
+                            Analytics</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Looker
+                            Studio</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Excel</span>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4" style="color: oklch(0.72 0.15 70);">Marketing & Content</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Social
+                            Media Strategy</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Content
+                            Creation</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Community
+                            Management</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Copywriting</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Emplifi</span>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4" style="color: oklch(0.72 0.15 70);">Design & Tools</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">CapCut</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Adobe
+                            PhotoShop</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Adobe
+                            Ilustrador</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Adobe
+                            Premier</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Adobe
+                            After Effects</span>
+                    </div>
+                </div>
+
+                <div class="gradient-card rounded-lg p-6 hover-scale">
+                    <h3 class="text-2xl font-bold mb-4" style="color: oklch(0.72 0.15 70);">AI & Automation</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Content
+                            Generation with AI</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">Process
+                            Automation</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">AI
+                            Insights</span>
+                        <span class="px-3 py-2 rounded-lg text-sm transition-colors"
+                            style="background: oklch(0.2 0.05 250); border: 1px solid rgba(212, 175, 55, 0.5);">AI-Powered
+                            Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 px-4 fade-in section-3d relative z-10">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl sm:text-5xl font-bold mb-8 gradient-text">Trabajemos Juntos</h2>
+            <p class="text-xl mb-12" style="color: oklch(0.75 0.05 250);">
+                ¿Interesado en colaborar? Conectemos y exploremos cómo puedo aportar valor a tu proyecto.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="https://www.linkedin.com/in/julio-esparza-glz/" target="_blank"
+                    class="gradient-card px-8 py-4 rounded-lg hover-scale flex items-center gap-3 text-lg">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="https://www.behance.net/julioesparzaglz" target="_blank"
+                    class="gradient-card px-8 py-4 rounded-lg hover-scale flex items-center gap-3 text-lg">
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M6.938 4.503c.702 0 1.34.06 1.92.188.577.13 1.07.33 1.485.61.41.28.733.65.96 1.12.225.47.34 1.05.34 1.73 0 .74-.17 1.36-.507 1.86-.338.5-.837.9-1.502 1.22.906.26 1.576.72 2.022 1.37.448.66.665 1.45.665 2.36 0 .75-.13 1.39-.41 1.93-.28.55-.67 1-1.16 1.35-.48.348-1.05.6-1.67.767-.61.165-1.252.25-1.91.25H0V4.51h6.938v-.007zM16.94 16.665c.44.428 1.073.643 1.894.643.59 0 1.1-.148 1.53-.447.424-.29.68-.61.78-.94h2.588c-.403 1.28-1.048 2.2-1.9 2.75-.85.56-1.884.83-3.08.83-.837 0-1.584-.13-2.24-.4-.65-.27-1.2-.65-1.64-1.12-.44-.47-.78-1.05-1.02-1.72-.24-.67-.36-1.39-.36-2.16 0-.75.125-1.45.38-2.12.25-.67.61-1.25 1.07-1.73.46-.48 1.01-.86 1.65-1.14.64-.28 1.35-.42 2.13-.42.87 0 1.63.18 2.29.53.66.35 1.2.83 1.62 1.44.42.61.73 1.3.93 2.07.2.77.28 1.57.24 2.4h-7.69c0 .84.28 1.49.71 1.93l.01.02zm-5.694-7.45h3.49V7.56h-3.49v1.65z" />
+                    </svg>
+                    Behance
+                </a>
+                <a href="mailto:julioesparza9125@gmail.com"
+                    class="px-8 py-4 rounded-lg hover-scale flex items-center gap-3 text-lg font-semibold"
+                    style="background: oklch(0.72 0.15 70); color: oklch(0.15 0.05 250);">
+                    <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t py-8 text-center relative z-10"
+        style="border-color: rgba(212, 175, 55, 0.5); color: oklch(0.65 0.05 250);">
+        <p>&copy; 2025 Julio Esparza. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
